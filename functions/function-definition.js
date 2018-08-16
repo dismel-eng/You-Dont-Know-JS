@@ -2,11 +2,14 @@
 
 //Print the name and value of each property of object. This function returns undefined
 function printprops(object){
+    var str = '';
+
     for (const key in object) {
         if (object.hasOwnProperty(key)) {
-            console.log(key + ' : ' + object[key] + '\n')
+            str += key + ' : ' + object[key] + '\n';
         }
     }
+    return str;
 }
 
 //Compute the distance between Cartesian points (x1,y1) and (x2,y2)
